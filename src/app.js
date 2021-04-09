@@ -1,3 +1,12 @@
+let temperatureElement = document.querySelector("#temperature");
+let cityElement = document.querySelector("#city");
+let descriptionElement = document.querySelector("#description");
+let humidityElement = document.querySelector("#humidity");
+let windElement = document.querySelector("#wind");
+let dateElement = document.querySelector("#date");
+let iconElement = document.getElementById("#icon");
+let precipitationElement = document.querySelector("#precipitation");
+
 function formatDate(timestamp) {
     let date = new Date(timestamp);
     let hours = date.getHours();
@@ -15,15 +24,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-    let temperatureElement = document.querySelector("#temperature");
-    let cityElement = document.querySelector("#city");
-    let descriptionElement = document.querySelector("#description");
-    let humidityElement = document.querySelector("#humidity");
-    let windElement = document.querySelector("#wind");
-    let dateElement = document.querySelector("#date");
-    let iconElement = document.querySelector("#icon");
-    let precipitationElement = document.querySelector("#precipitation");
-
+    console.log(response)
     celciusTemperture = response.data.main.temp;
 
     temperatureElement.innerHTML = Math.round(celciusTemperture);
@@ -31,8 +32,9 @@ function displayTemperature(response) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed);
-    precipitationElement.innerHTML = response.data.main.precipitation;
+    // precipitationElement.innerHTML = response.data.main.precipitation;
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    console.log(`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
 
