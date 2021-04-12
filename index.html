@@ -22,9 +22,10 @@
         <div class="container">
             <div class="weather-app-wrapper">
                 <div class="weather-app">
-                    <div class="overview">
-                        <div class="row">
-                            <div class="col-6">
+                    <div>
+                        <div class="overview">
+                            <div class="row">
+
                                 <strong> <h1 id="city"></h1> </strong>
                                 <ul>
                                     <li id="description"></li>
@@ -32,40 +33,43 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="temp-div">
-                        <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="clear" id="icon" class="float-left" />
-                        <strong id="temperature"></strong>
-                        <span class="units">
-                                    <a href="#" id="celsius-link" class="a">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
-                    </div>
-                    <form id="search-form" class="mb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="search" placeholder="Type a city..." class="form-control w-40" id="city-input" autocomplete="off" />
-                                <div class="col-1"></div>
-                                <span><input type="submit" value="Search" class="btn btn-primary w-20" /></span>
-                                <h2>Last update: <span id="date"></h2></span>
+                        <h2>Last update: <span id="date"></h2></span>
+                            <div class="d-flex flex-row row">
+                                <div class="d-flex align-items-center col-6">
+                                    <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="clear" id="icon" class="float-left" />
+                                    <strong id="temperature"></strong>
+                                    <span class="units">
+                                        <a href="#" id="celsius-link" class="a">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+                                </div>
+                                <div class="d-flex align-items-center col-6">
+                                    <form id="search-form" class="mb-3 col-10">
+                                        <input type="search" placeholder="Type a city..." class="form-control w-40" id="city-input" autocomplete="off" />
+                                        <div class="col-1"></div>
+                                        <span><input type="submit" value="Search" class="btn btn-primary w-20" /></span>
+
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                    </div>
 
                     <div class="col-10">
-                        <ul>
-                            <li>
-                                Humidity: <span id="humidity"></span>%</li>
-                            <li>
-                                Wind: <span id="wind"></span> km/hr</li>
-                        </ul>
+                        <h4>
+                            <ul>
+                                <li>
+                                    Humidity: <span id="humidity"></span>%</li>
+                                <li>
+                                    Wind: <span id="wind"></span> km/hr</li>
+                            </ul>
+                        </h4>
                     </div>
                 </div>
                 <div class="weather-forecast" id="forecast">
                 </div>
             </div>
         </div>
-        <small>
-     <a href="https://github.com/csleal694/Weather_Leal_App">Open-source code</a><span>by Cynthia Leal </span>
-</small>
+        <h5>
+            <a href="https://github.com/csleal694/Weather_Leal_App">Open-source code: </a><span>by Cynthia Leal </span>
+        </h5>
         </div>
         </div>
         </div>

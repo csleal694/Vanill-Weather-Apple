@@ -1,186 +1,188 @@
-              body {
-              padding-top: 10px;
-              background: #1e3150;
-          }
-          
-          h1 i {
-              font-size: 25px;
-              padding: 5px;
-          }
-          
-          h1 {
-              color: white;
-              text-align: left;
-              margin: 5px 100px;
-              font-size: 100px;
-              font-family: "Bebas Neue", cursive;
-              font-family: "Inter", sans-serif;
-          }
-          
-          h2 {
-              text-align: left;
-              margin: 2px 100px;
-              width: 100%;
-              font-family: "Inter", sans-serif;
-              font-size: 15px;
-              color: white;
-              margin: 0;
-              padding: 0;
-          }
-          
-          h3 {
-              font-size: 25px;
-              color: white;
-              text-align: right;
-              margin: 2px 100px 30px;
-          }
-          
-          h4 {
-              text-align: left;
-              margin: 2px 100px;
-              color: white;
-          }
-          
-          #celcius-click {
-              font-size: 21px;
-              text-align: top;
-              color: white;
-              margin: 0px 0px 20px 0px;
-          }
-          
-          #fahrenheit-click {
-              font-size: 21px;
-              text-align: top;
-              color: white;
-              margin: 0px 0px 20px 0px;
-          }
-          
-          main {
-              border-style: solid;
-              width: 550px;
-              height: 270px;
-              border: 50px;
-          }
-          
-          #city {
-              font-size: 30px;
-              color: white;
-              padding: 0;
-              margin: 2px 10px;
-          }
-          
-          #temperature {
-              margin-right: 8px;
-              font-size: 75px;
-              color: white;
-          }
-          
-          #description {
-              font-size: 20px;
-              color: white;
-              text-align: right;
-              margin: 2px 10px;
-              text-transform: uppercase;
-          }
-          
-          #search-text-input {
-              margin: 80px 0px 0px 0px;
-              height: 35px;
-              width: 200px;
-              font-size: 14pt;
-              text-align: center;
-          }
-          
-          #description {
-              text-align: left;
-          }
-          
-          ul {
-              margin: 0;
-              padding: 0;
-          }
-          
-          li {
-              list-style: none;
-              margin: 0;
-              padding: 0;
-              color: white;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 20px;
-              text-align: right;
-          }
-          
-          li:first-letter {
-              text-transform: capitalize;
-          }
-          
-          .weather-app-wrapper {
-              max-width: 600px;
-              margin: 30px auto;
-          }
-          
-          .weather-app {
-              padding: 20px;
-              border: 1px solid lightskyblue;
-              border-radius: 5px;
-          }
-          
-          .overview {
-              margin-bottom: 20px;
-          }
-          
-          .weather-temperature img {
-              margin-right: 5px;
-              height: 64px;
-              width: 64px;
-          }
-          
-          .weather-temperature strong {
-              color: white;
-              font-size: 64px;
-              font-weight: 400;
-              line-height: 1;
-          }
-          
-          .weather-temperature .units {
-              position: relative;
-              font-size: 16px;
-          }
-          
-          .weather-temperature .active {
-              color: rgb(33, 33, 33);
-              cursor: default;
-              text-decoration: none;
-          }
-          
-          .weather-temperature .active:hover {
-              text-decoration: none;
-          }
-          
-          .temp-div {
-              display: flex;
-              flex-direction: row;
-              width: 100%;
-              align-items: center;
-          }
-          
-          .weather-forecast {
-              margin-top: 20px;
-              text-align: center;
-              color: white;
-          }
-          
-          .weather-forecast-date {
-              font-size: 20px;
-              color: white;
-          }
-          
-          .weather-forecast-temperature-min {
-              opacity: 0.8;
-              color: white;
-          }
-          
-          .weather-forecast-temperatures {
-              font-size: 16px;
-              color: white;
+                                                                          body {
+                                                                              padding-top: 10px;
+                                                                              background: #1e3150;
+                                                                          }
+                                                                          
+                                                                          h1 {
+                                                                              color: white;
+                                                                              text-align: left;
+                                                                              margin: 5px 100px;
+                                                                              font-size: 200px;
+                                                                              font-family: "Bebas Neue", cursive;
+                                                                              font-family: "Inter", sans-serif;
+                                                                          }
+                                                                          
+                                                                          h2 {
+                                                                              text-align: right;
+                                                                              width: 100%;
+                                                                              font-family: "Inter", sans-serif;
+                                                                              font-size: 16px;
+                                                                              color: white;
+                                                                              padding: 0 55px 0 80px;
+                                                                          }
+                                                                          
+                                                                          h3 {
+                                                                              font-size: 25px;
+                                                                              color: white;
+                                                                              text-align: right;
+                                                                              margin: 2px 100px 30px;
+                                                                          }
+                                                                          
+                                                                          h4 {
+                                                                              text-align: right;
+                                                                              width: 100%;
+                                                                              font-family: "Inter", sans-serif;
+                                                                              font-size: 18px;
+                                                                              color: white;
+                                                                              padding: 0 65px 0 80px;
+                                                                          }
+                                                                          
+                                                                          #celcius-click {
+                                                                              font-size: 21px;
+                                                                              text-align: top;
+                                                                              color: white;
+                                                                              margin: 0px 0px 20px 0px;
+                                                                          }
+                                                                          
+                                                                          #fahrenheit-click {
+                                                                              font-size: 21px;
+                                                                              text-align: top;
+                                                                              color: white;
+                                                                              margin: 0px 0px 20px 0px;
+                                                                          }
+                                                                          
+                                                                          main {
+                                                                              border-style: solid;
+                                                                              width: 550px;
+                                                                              height: 270px;
+                                                                              border: 50px;
+                                                                          }
+                                                                          
+                                                                          #city {
+                                                                              font-size: 30px;
+                                                                              color: white;
+                                                                              padding: 0;
+                                                                              margin: 2px 10px;
+                                                                          }
+                                                                          
+                                                                          #temperature {
+                                                                              margin-right: 8px;
+                                                                              font-size: 80px;
+                                                                              color: white;
+                                                                          }
+                                                                          
+                                                                          #description {
+                                                                              font-size: 20px;
+                                                                              color: white;
+                                                                              text-align: right;
+                                                                              margin: 2px 10px;
+                                                                              text-transform: uppercase;
+                                                                          }
+                                                                          
+                                                                          #search-text-input {
+                                                                              margin: 80px 0px 0px 0px;
+                                                                              height: 35px;
+                                                                              width: 200px;
+                                                                              font-size: 14pt;
+                                                                              text-align: center;
+                                                                          }
+                                                                          
+                                                                          #description {
+                                                                              text-align: left;
+                                                                          }
+                                                                          
+                                                                          ul {
+                                                                              margin: 0;
+                                                                              padding: 0;
+                                                                          }
+                                                                          
+                                                                          li {
+                                                                              list-style: none;
+                                                                              margin: 0;
+                                                                              padding: 0;
+                                                                              color: white;
+                                                                              font-size: 16px;
+                                                                              font-weight: 400;
+                                                                              line-height: 20px;
+                                                                              text-align: right;
+                                                                          }
+                                                                          
+                                                                          li:first-letter {
+                                                                              text-transform: capitalize;
+                                                                          }
+                                                                          
+                                                                          .weather-app-wrapper {
+                                                                              max-width: 600px;
+                                                                              margin: 30px auto;
+                                                                          }
+                                                                          
+                                                                          .weather-app {
+                                                                              padding: 20px;
+                                                                              border: 1px solid lightskyblue;
+                                                                              border-radius: 5px;
+                                                                          }
+                                                                          
+                                                                          .overview {
+                                                                              margin-bottom: 20px;
+                                                                          }
+                                                                          
+                                                                          .weather-temperature img {
+                                                                              margin-right: 5px;
+                                                                              height: 64px;
+                                                                              width: 64px;
+                                                                          }
+                                                                          
+                                                                          .weather-temperature strong {
+                                                                              color: white;
+                                                                              font-size: 64px;
+                                                                              font-weight: 400;
+                                                                              line-height: 1;
+                                                                          }
+                                                                          
+                                                                          .weather-temperature .units {
+                                                                              position: relative;
+                                                                              font-size: 16px;
+                                                                          }
+                                                                          
+                                                                          .weather-temperature .active {
+                                                                              color: rgb(33, 33, 33);
+                                                                              cursor: default;
+                                                                              text-decoration: none;
+                                                                          }
+                                                                          
+                                                                          .weather-temperature .active:hover {
+                                                                              text-decoration: none;
+                                                                          }
+                                                                          
+                                                                          .temp-div {
+                                                                              display: flex;
+                                                                              flex-direction: row;
+                                                                              width: 100%;
+                                                                              align-items: center;
+                                                                          }
+                                                                          
+                                                                          .weather-forecast {
+                                                                              margin-top: 20px;
+                                                                              text-align: center;
+                                                                              color: white;
+                                                                          }
+                                                                          
+                                                                          .weather-forecast-date {
+                                                                              font-size: 20px;
+                                                                              color: white;
+                                                                          }
+                                                                          
+                                                                          .weather-forecast-temperature-min {
+                                                                              opacity: 0.8;
+                                                                              color: white;
+                                                                          }
+                                                                          
+                                                                          .weather-forecast-temperatures {
+                                                                              font-size: 16px;
+                                                                              color: white;
+                                                                          }
+                                                                          
+                                                                          h5 {
+                                                                              text-align: center;
+                                                                              font-size: 16px;
+                                                                          }
